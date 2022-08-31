@@ -1,0 +1,14 @@
+@use "zindex";
+
+.toolbar-container {
+  z-index: zindex.$above-canvas;;
+  position: absolute;
+  bottom: 5px;
+
+  width: 100%;
+  text-align: center;
+
+  app-toolbar-product-item {
+    margin-right: 15px;
+  }
+}

@@ -1,0 +1,29 @@
+@use "./src/styles/vars";
+
+$size: 64px;
+$small-size: 48px;
+
+.active {
+  border: 1px solid var(--color-active);
+}
+
+.product-item {
+  display: inline-block;
+}
+
+img {
+  width: $size;
+  height: $size;
+  border-radius: 50%;
+  cursor: pointer;
+  user-select: none;
+
+  @media screen and (max-width: 480px) {
+    width: $small-size;
+    height: $small-size;
+  }
+
+  &:hover:not(.active) {
+    border: 1px solid var(--color-active-hover);
+  }
+}

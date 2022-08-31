@@ -1,0 +1,13 @@
+@use "../../../../styles/vars";
+@use "mixins";
+
+input[type="color"] {
+  width: vars.$input-color-size;
+  max-width: 100%;
+  height: vars.$input-color-size;
+  padding: 0;
+  border: none;
+}
+
+@include mixins.remove-input-color-border();
+

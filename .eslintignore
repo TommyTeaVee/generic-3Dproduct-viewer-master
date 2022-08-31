@@ -1,0 +1,12 @@
+.eslintrc.js
+*.html
+
+# build files
+node_modules
+dist
+build
+
+#test files
+karma.conf.js
+protractor.conf.js
+test.ts

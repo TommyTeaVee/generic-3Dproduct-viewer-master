@@ -1,0 +1,31 @@
+@use "zindex";
+@use "spacing";
+
+$width: 300px;
+
+:host {
+  // The host element needs to be a position absolute or the child content adds scrollbars when it's off screen.
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: $width;
+  overflow: hidden;
+
+  --sidebar-closed-right: -#{$width};
+}
+
+.configurator-sidebar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: zindex.$content;
+
+  width: $width;
+  padding: var(--spacer-50);
+  background-color: var(--color-background);
+  border-left: 1px solid var(----color-border);
+
+  color: snow;
+}
